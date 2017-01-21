@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Барбершоп «Бородинский»</title>
+  </head>
+  <body>
+  	<header class="main-header">
+  	  <div class="container">
+        <div class="index-logo">
+          <img src="img/index-logo.png" width="50" height="50" alt="Барбершоп «Бородинский»">
+        </div>
+
+  			<nav class="main-menu">
+          <ul>
+  					<li>
+  						<a href="#">Информация</a>
+  					</li>
+  					<li>
+  						<a href="#">Новости</a>
+  					</li>
+  					<li>
+  						<a href="#">Прайс-лист<a>
+  					</li>
+  					<li>
+  						<a href="#">Магазин</a>
+  					</li>
+  					<li>
+  						<a href="#">Контакты</a>
+  					</li>
+  				</ul>
+  			</nav>
+
+  			<div class="user-block">
+  				<a class="login" href="#">Вход</a>
+  			</div>
+  		</div>
+  	</header>
+
+    <main class="container">
+      <h2 class="catalog-title">Средства для ухода</h2>
+
+      <ul class="catalog-breadcrumbs">
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Магазин</a>
+        </li>
+        <li>
+          <a href="#">Средства для ухода<a>
+        </li>
+      </ul>
+    
+      <section class="catalog-content">
+        <div class="catalog-content-left">
+          <h3 class="catalog-content-title">Производители:</h3>
+          <form class="producers" action="https://echo.htmlacademy.ru" method="post">
+            <input type="checkbox" name="baxter" id="baxter" checked>
+            <label for="baxter">Baxter California</label>
+            <input type="checkbox" name="mr" id="mr">
+            <label for="mr">Mr Natty</label>
+            <input type="checkbox" name="suavecito" id="suavecito" checked>
+            <label for="suavecito">Suavecito</label>
+            <input type="checkbox" name="malin" id="malin">
+            <label for="malin">Malin+Goetz</label>
+            <input type="checkbox" name="murray" id="murray">
+            <label for="murray">Murray's</label>
+            <input type="checkbox" name="american" id="american" checked>
+            <label for="american">American Crew</label>
+          </form>
+          <h3 class="catalog-content-title">Группы товаров:</h3>
+          <form class="products-group" action="https://echo.htmlacademy.ru" method="post">
+            <input type="checkbox" name="shave" id="shave">
+            <label for="shave">Бритвенные принадлежности</label>
+            <input type="checkbox" name="care" id="care" checked>
+            <label for="care">Средства для ухода</label>
+            <input type="checkbox" name="accessories" id="accessories">
+            <label for="accessories">Аксессуары</label>
+          </form>
+
+          <!--Кнопка потому что наверное как то обрабатывается выбор в чек боксах и выводятся результаты ??? -->
+          <button class="btn" type="button">Показать</button> 
+        </div>
+
+        <div class="catalog-content-right">
+          <div class="catalog-item">
+            <img src="img/product1.png" alt="Товар1" width="100" height="100">
+            <h4 class="catalog-item-title">Набор для путешествий "Baxter California"</h4>
+            <b class="price">2 900 Руб.</b>
+            <a class="btn" href="#">Купить</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/product2.png" alt="Товар2" width="100" height="100">
+            <h4 class="catalog-item-title">Увлажняющий кондиционер "Baxter California"</h4>
+            <b class="price">750 Руб.</b>
+            <a class="btn" href="#">Купить</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/product3.png" alt="Товар3" width="100" height="100">
+            <h4 class="catalog-item-title">Гель для волос "Suavecito"</h4>
+            <b class="price">290 Руб.</b>
+            <a class="btn" href="#">Купить</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/product4.png" alt="Товар4" width="100" height="100">
+            <h4 class="catalog-item-title">Глина для укладки волос "American Crew"</h4>
+            <b class="price">500 Руб.</b>
+            <a class="btn" href="#">Купить</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/product5.png" alt="Товар5" width="100" height="100">
+            <h4 class="catalog-item-title">Гель для волос "American Crew"</h4>
+            <b class="price">300 Руб.</b>
+            <a class="btn" href="#">Купить</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/product6.png" alt="Товар6" width="100" height="100">
+            <h4 class="catalog-item-title">Набор для бритья "Baxter California"</h4>
+            <b class="price">3 900 Руб.</b>
+            <a class="btn" href="#">Купить</a>
+          </div>
+
+          <!--Правильно понимаю что листаться у нас будет только правая часть с отобранным товаром, а чекбоксы будут оставться, что бы с любого листа можно было изменить критерии отбора??? -->
+          <a class="btn catalog-page" href="#">1</a>
+          <a class="btn catalog-page" href="#">2</a>
+          <a class="btn catalog-page" href="#">3</a>
+          <a class="btn catalog-page" href="#">4</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+          <section class="footer-contacts">
+            Барбершоп «Бородинский»<br>
+              Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+              <a href="#">Как нас найти?</a><br>
+              Телефон: +7 (812) 666-02-66          
+          </section>
+          <section class="footer-social">
+            <p>Давайте дружить!</p>
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </section>
+          <section class="footer-copyright">
+            <p>Разработано:</p>
+              <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+            </section>
+        </div>
+    </footer>   
+
+  </body>
+</html>
