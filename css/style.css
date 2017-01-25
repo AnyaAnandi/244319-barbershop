@@ -16,11 +16,8 @@ nav a,
 	font-size: 16px;
 	line-height: 20px;
 	color: red; /* ПО МАКЕТУ БЕЛЫЙ ШРИФТ - НАДО БУДЕТ ИЗМЕНИТЬ */
-	font-weight: bold;
-	font-family: "PT Sans", "Arial", serif;
-	text-transform: uppercase;
-
 }
+
 .features h2 {
 	color: red; /* ПО МАКЕТУ БЕЛЫЙ ШРИФТ - НАДО БУДЕТ ИЗМЕНИТЬ */
 }
@@ -28,37 +25,21 @@ nav a,
 h2 {
 	font-size: 30px;
 	line-height: 42px;
-	color: #000000;
-	font-weight: bold;
-	font-family: "PT Sans", "Arial", serif;
-	text-transform: uppercase;
 }
 
 .producers-products legend,
 .catalog-item-description-right h3  {
 	font-size: 24px;
 	line-height: 30px;
-	color: #000000;
-	font-weight: bold;
-	font-family: "PT Sans", "Arial", serif;
-	text-transform: uppercase;
 }
 
 .catalog-breadcrumbs a {
 	font-size: 14px;
 	line-height: 20px;
-	color: #000000;
-	font-weight: bold;
-	font-family: "PT Sans", "Arial", serif;
-	text-transform: uppercase;
 }
 
 .catalog-item-breadcrumbs a {
 	font-size: 14px;
 	line-height: 24px; /* ПО МАКЕТУ В ЭТИХ КРОШКАХ ТАКОЕ ЗНАЧЕНИЕ */
-	color: #000000;
-	font-weight: bold;
-	font-family: "PT Sans", "Arial", serif;
-	text-transform: uppercase;
 }
 
