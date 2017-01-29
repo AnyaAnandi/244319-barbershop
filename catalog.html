@@ -7,8 +7,8 @@
   </head>
   <body>
   	<header class="main-header">
-  	  <div class="container">
-        <div class="index-logo">
+  	  <div class="container clearfix">
+        <div class="index-logo-small">
           <a href="index.html">
             <img src="img/logo-small.png" width="113" height="25" alt="Барбершоп «Бородинский»">
           </a>
@@ -55,35 +55,55 @@
         </li>
       </ul>
     
-      <section class="catalog-content">
+      <section class="catalog-content clearfix">
 
         <div class="catalog-content-left"> 
                  
           <form class="producers-products" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend class="catalog-content-title">Производители:</legend>
-                <input type="checkbox" name="baxter" id="baxter" checked>
-                <label for="baxter">Baxter California</label>
-                <input type="checkbox" name="mr" id="mr">
-                <label for="mr">Mr Natty</label>
-                <input type="checkbox" name="suavecito" id="suavecito" checked>
-                <label for="suavecito">Suavecito</label>
-                <input type="checkbox" name="malin" id="malin">
-                <label for="malin">Malin+Goetz</label>
-                <input type="checkbox" name="murray" id="murray">
-                <label for="murray">Murray's</label>
-                <input type="checkbox" name="american" id="american" checked>
-                <label for="american">American Crew</label>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="baxter" id="baxter" checked>
+                    <label for="baxter">Baxter California</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="mr" id="mr">
+                    <label for="mr">Mr Natty</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="suavecito" id="suavecito" checked>
+                    <label for="suavecito">Suavecito</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="malin" id="malin">
+                    <label for="malin">Malin+Goetz</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="murray" id="murray">
+                    <label for="murray">Murray's</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="american" id="american" checked>
+                    <label for="american">American Crew</label>
+                  </li>
             </fieldset>
 
             <fieldset>
-              <legend class="catalog-content-title">Группы товаров:</legend>          
-                <input type="radio" name="shave" id="shave">
-                <label for="shave">Бритвенные принадлежности</label>
-                <input type="radio" name="care" id="care" checked>
-                <label for="care">Средства для ухода</label>
-                <input type="radio" name="accessories" id="accessories">
-                <label for="accessories">Аксессуары</label>
+              <legend class="catalog-content-title">Группы товаров:</legend> 
+              <ul>
+                <li>         
+                  <input type="radio" name="shave" id="shave">
+                  <label for="shave">Бритвенные принадлежности</label>
+                </li>
+                <li>
+                  <input type="radio" name="care" id="care" checked>
+                  <label for="care">Средства для ухода</label>
+                </li>
+                <li>
+                  <input type="radio" name="accessories" id="accessories">
+                  <label for="accessories">Аксессуары</label>
+                </li>
             </fieldset>
 
             <input type="submit" value="Показать">
@@ -147,8 +167,8 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="container">
+    <footer class="main-footer catalog">
+        <div class="container clearfix">
           <section class="footer-contacts">
             Барбершоп «Бородинский»<br>
               Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
