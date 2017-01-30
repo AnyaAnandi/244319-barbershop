@@ -223,6 +223,16 @@ p {
 	
 }
 
+
+.catalog-content {
+	font-size: 0;
+}
+label,
+.catalog-item-title,
+.pagination {
+	font-size: 14px;
+	line-height: 18px;
+}
 .catalog-item {
 	display: inline-block;
 	vertical-align: top;
@@ -230,9 +240,10 @@ p {
 	margin-right: 20px;
 }
 
-.catalog-item:nth-last-child(n+2) {
+.catalog-item:nth-last-child(n+2) { /* ЕСЛИ ЭТО УБИРАЮ ТО НЕ ВЛЕЗАЮТ В ОДНУ СТРОКУ */
 	margin-right: 0;
 }
+
 
 .pagination {
 	margin-top: 45px;
