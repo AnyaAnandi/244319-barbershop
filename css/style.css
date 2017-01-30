@@ -6,7 +6,7 @@ body {
 	line-height: 24px;
 	color: #000000;
 	font-weight: bold;
-	font-family: "PT Sans", "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif; /* !!! НЕПРАВИЛЬНЫЙ ШРИФТ */
 	text-transform: uppercase;
 }
 
@@ -26,7 +26,7 @@ nav a,
 }
 
 h2 {
-	font-size: 26px; /* ??? ПО МАКЕТУ РАЗМЕР 30 НО ОНЕ НЕ ВМЕЩАЕТСЯ ????  */
+	font-size: 30px; 
 	line-height: 42px;
 }
 
@@ -64,15 +64,22 @@ p {
 }
 
 .main-menu {
-	min-height: 72 px; 
+	min-height: 72px; 
 	width: 640px;
 	float: left;
+}
+
+.main-menu li {
+	list-style: none;
+	float: left;
+	margin-right: 12px;
 }
 
 .user-block {
 	min-height: 72 px; 
 	width: 140px;
 	float: right;
+	margin-top: 12px;
 }
 .clearfix::after {
 	content: "";
@@ -153,6 +160,14 @@ p {
 	margin-top: 24px;
 	margin-bottom: 56px;
 }
+
+.catalog-breadcrumbs li,
+.catalog-item-breadcrumbs li {
+	list-style: none;
+	float: left;
+	margin-right: 15px; /* ??? РАССТОЯНИЕ ДО РОМБИКА БЕРЕМ ИЛИ ДО СЛЕДУЮЩЕГО ПУНКТА? */
+
+}
 .catalog-item-description-left {
 	min-height: 670px;
 	width: 460px;
@@ -179,7 +194,7 @@ p {
 	padding-bottom: 38px;
 }
 .description {
-	font-size: 14px; /* ПОЧЕМУ ТО НЕ ВЫХОДИТ КАК НА МАКЕТЕ - ВСЕ СЪЕЗЖАЕТ */
+	font-size: 14px; 
 	clear: both;
 	padding-bottom: 40px;
 }
@@ -213,7 +228,6 @@ p {
 	vertical-align: top;
 	width: 220px;
 	margin-right: 20px;
-
 }
 
 .catalog-item:nth-last-child(n+2) {
@@ -221,8 +235,13 @@ p {
 }
 
 .pagination {
-	clear: both;
-	width: 193px;
+	margin-top: 45px;
+	width: 194px;
+}
+.pagination li {
+	list-style: none;
+	float: left;
+	margin-right: 28px;
 }
 
 
