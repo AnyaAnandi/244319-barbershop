@@ -1,3 +1,4 @@
+/* flexbox */
 body {
 	min-width: 1122px;
   	margin: 0;
@@ -55,36 +56,39 @@ p {
 .main-header {
 	margin-bottom: 60px;
 }
+
 .container {
 	width: 940px;
-	padding: 0 10px;
-	margin-left: auto;
-	margin-right: auto;
-
+	margin: 0 auto;
+	padding: 0 auto;
+	min-height: 72px;
 }
 
 .main-menu {
-	min-height: 72px; 
-	width: 640px;
-	float: left;
-}
-
-.main-menu li {
-	list-style: none;
-	float: left;
-	margin-right: 12px;
+	width: 780px;
+	min-height: 72px;
 }
 
 .user-block {
-	min-height: 72 px; 
 	width: 140px;
-	float: right;
+	min-height: 72px;
 	margin-top: 12px;
+	margin-bottom: -12px; /* складываются маргины у хедера и юсер блока */
+	margin-left: auto; /* не встает на свое место Вход */
 }
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
+
+.main-header-layout {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-menu li{
+	list-style: none;
+	margin-right: 12px;
+}
+.main-nav {
+	display: flex;
+	width: 540px;
 }
 
 .index-logo {
@@ -94,34 +98,54 @@ p {
 	margin-right: auto;
 	margin-bottom: 25px;
 }
+
 .features {
+	display: flex;
+	justify-content: space-between;
 	margin-bottom: 80px;
 }
-.feature-item {
-	min-height: 180 px; 
-	float: left;
-	width: 300px;
-	margin-right: 20px;
-}
 
-.feature-item:last-child {
-	margin-right: 0;
-}
+.feature-item {
+	width: 300px;
+	min-height: 180 px; 
+	}
 
 .index-content {
-	padding: 50px 80px;
 	margin-bottom: 35px;
+	padding: 50px 80px;
+	display: flex;
+	justify-content: space-between;
 }
 .index-content-left {
-	min-height: 330px; 
 	width: 380px;
-	float: left;
+	min-height: 330px;
+}
+.news-preview li {
+	list-style: none;
+	margin-left: -40px;
 }
 
 .index-content-right {
-	min-height: 330px; 
 	width: 300px;
-	float: right;
+	min-height: 330px;
+}
+.gallery-content {
+	margin-left: 0px;
+}
+.appointment-form {
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+.form-field {
+	position: relative;
+	width: 108px;
+	margin-right: 20px;
+	margin-bottom:20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	flex-grow: 1;
 }
 
 .main-footer {
@@ -129,60 +153,104 @@ p {
 	padding-top: 60px;
 	padding-bottom: 40px;
 }
-
+.main-footer-layout {
+	display:flex;
+}
 .footer-contacts {
 	min-height: 90px;
 	width: 320px;
-	float: left;
 	margin-right: 60px;
 }
+
 .footer-social {
 	min-height: 90px;
 	width: 180px;
-	float: left;
 }
 .footer-copyright {
 	min-height: 90px;
 	width: 180px;
-	float: right;
+	margin-left: auto;
 }
 
-/* СЕТКА CATALOG-ITEM */
+
+/* catalog */
+
 .index-logo-small {
-	min-height: 72px;
 	width: 120px;
-	float: left;
+	min-height: 72px;
+	background-color: black;
 	margin-right: 40px;
-	background-color: black;/* ПРОСТО ЧТО БЫ ЛОГО БЫЛО ВИДНО - НАДО БУДЕТ ИЗМЕНИТЬ */
 }
+
 .catalog-breadcrumbs,
 .catalog-item-breadcrumbs {
+	display: flex;
 	margin-top: 24px;
 	margin-bottom: 56px;
+	margin-left: -35px;
 }
 
 .catalog-breadcrumbs li,
 .catalog-item-breadcrumbs li {
 	list-style: none;
-	float: left;
-	margin-right: 15px; /* ??? РАССТОЯНИЕ ДО РОМБИКА БЕРЕМ ИЛИ ДО СЛЕДУЮЩЕГО ПУНКТА? */
+	margin-right: 15px;
+}
+.catalog-content {
+	display: flex;
+	justify-content: space-between;
+}
+.catalog-content-left {
+	width: 165px;
+	min-height: 570px;
+}
 
+.catalog-content-right {
+	width: 700px;
+	min-height: 680px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+
+label,
+.catalog-item-title,
+.pagination {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.catalog-item {
+	width: 220px;
+	min-height: 286px;
+}
+
+.pagination {
+	margin-top: 45px;
+	width: 194px;
+	display: flex;
+	justify-content: space-between;
+}
+.pagination li {
+	list-style: none;
+}
+
+/* catalog - item*/
+.catalog-item-description {
+	display: flex;
+	justify-content: space-between;
 }
 .catalog-item-description-left {
 	min-height: 670px;
 	width: 460px;
-	float: left;
-	margin-right: 90px;
-}
-
-.catalog-item-description {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .catalog-item-description-right {
 	min-height: 670px;
 	width: 380px;
-	float: left;
 }
+
 .availability {
 	float: left;
 }
@@ -205,61 +273,6 @@ p {
 	padding-top: 64px;
 	padding-bottom: 36px;
 }
-
-.main-footer .item,
-.main-footer .catalog {
-	margin-top: 49px; /* ??? ПО МАКЕТУ ТАКОЕ РАССТОЯНИЕ ДО ФУТЕРА - МЕНЬШЕ ЧЕМ У ГЛАВНОЙ СТРАНИЦЫ, НО НА САМОМ САЙТЕ ЧТО-ТО НИЧЕГО НЕ МЕНЯЕТСЯ??? */
-}
-
-/* СЕТКА CATALOG */
-.catalog-content-left {
-	width: 165px;
-	min-height: 570px;
-	float: left;
-	margin-right: 75px;
-}
-
-.catalog-content-right {
-	width: 700px;
-	float: left;
-	min-height: 680px;
-	
-}
-
-
-.catalog-content {
-	font-size: 0;
-}
-label,
-.catalog-item-title,
-.pagination {
-	font-size: 14px;
-	line-height: 18px;
-}
-.catalog-item {
-	display: inline-block;
-	vertical-align: top;
-	width: 220px;
-	margin-right: 20px;
-}
-
-.catalog-item:nth-last-child(n+2) { /* ЕСЛИ ЭТО УБИРАЮ ТО НЕ ВЛЕЗАЮТ В ОДНУ СТРОКУ */
-	margin-right: 0;
-}
-
-
-.pagination {
-	margin-top: 45px;
-	width: 194px;
-}
-.pagination li {
-	list-style: none;
-	float: left;
-	margin-right: 28px;
-}
-
-
-
 
 
 
